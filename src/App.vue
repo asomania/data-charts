@@ -28,7 +28,7 @@ export default defineComponent({
   data() {
     return {
       tab: null,
-      items: ["Item 1", "Item 2", "Item 3"],
+      items: ["Item 1", "Item 2"],
       //
     };
   },
