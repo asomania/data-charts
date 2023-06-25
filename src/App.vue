@@ -1,18 +1,32 @@
 <template>
-  <v-app>
-    <v-main>
-      <!-- <HelloWorld/> -->
-      <v-tabs v-model="tab" align-tabs="title">
-        <v-tab v-for="item in items" :key="item" :value="item">
-          {{ item }}
-        </v-tab>
-        <v-tab-item v-for="item in items" :key="item" :value="item">
-          {{ item }} content
-        </v-tab-item>
-      </v-tabs>
-    </v-main>
-  </v-app>
+  <v-card>
+    <v-tabs
+      v-model="tab"
+     
+    >
+      <v-tab value="one">Bar</v-tab>
+      <v-tab value="two">Pie</v-tab>
+      <v-tab value="three">Y-Bar</v-tab>
+    </v-tabs>
+
+    
+      <v-window v-model="tab">
+        <v-window-item value="one">
+          One
+        </v-window-item>
+
+        <v-window-item value="two">
+          Two
+        </v-window-item>
+
+        <v-window-item value="three">
+          Three
+        </v-window-item>
+      </v-window>
+    
+  </v-card>
 </template>
+
 
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -28,7 +42,7 @@ export default defineComponent({
   data() {
     return {
       tab: null,
-      items: ["Item 1", "Item 2"],
+      items: ["Bar", "Pie", "YBar"],
       //
     };
   },
