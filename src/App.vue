@@ -9,7 +9,7 @@
       <v-tab value="three">Y-Bar</v-tab>
     </v-tabs>
 
-    
+  
       <v-window v-model="tab">
         <v-window-item value="one">
           One
