@@ -12,7 +12,7 @@
   
       <v-window v-model="tab">
         <v-window-item value="one">
-          One
+          <BarChart></BarChart>
         </v-window-item>
 
         <v-window-item value="two">
@@ -20,7 +20,7 @@
         </v-window-item>
 
         <v-window-item value="three">
-          Three
+          <YBarChart></YBarChart>
         </v-window-item>
       </v-window>
     
@@ -30,15 +30,16 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import HelloWorld from './components/HelloWorld.vue'
+import BarChart from "./components/BarChart.vue"
+import YBarChart from "./components/YBar.vue"
 
 export default defineComponent({
   name: "App",
 
-  // components: {
-  //   HelloWorld,
-  // },
-
+  components: {
+    BarChart,
+    YBarChart
+  },
   data() {
     return {
       tab: null,
