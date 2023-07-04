@@ -16,7 +16,7 @@
         </v-window-item>
 
         <v-window-item value="two">
-          Two
+          <PieChart></PieChart>
         </v-window-item>
 
         <v-window-item value="three">
@@ -32,13 +32,15 @@
 import { defineComponent } from "vue";
 import BarChart from "./components/BarChart.vue"
 import YBarChart from "./components/YBar.vue"
+import PieChart from "./components/PieChart.vue"
 
 export default defineComponent({
   name: "App",
 
   components: {
     BarChart,
-    YBarChart
+    YBarChart,
+    PieChart
   },
   data() {
     return {

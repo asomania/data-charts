@@ -25,9 +25,8 @@ export default defineComponent({
         const barChart = new BarChart(data, categories);
         const options = barChart.getOptions();
 
-        if (chart.value) {
           chart.value.setOption(options);
-        }
+      
       }
     });
 

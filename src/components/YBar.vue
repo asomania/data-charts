@@ -26,9 +26,9 @@
           const yBarChart = new YBarChart(data1, data2 ,categories);
           const options = yBarChart.getOptions();
   
-          if (chart.value) {
+          
             chart.value.setOption(options);
-          }
+          
         }
       });
   
